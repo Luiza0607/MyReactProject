@@ -1,0 +1,30 @@
+.columnForm {
+	text-align: center;
+	padding: 10px;
+
+	input {
+		margin: 5px;
+		border-radius: 5px;
+	}
+
+	input[type="text"] {
+		padding: 12px;
+	}
+}
+
+@media (max-width: 767px) {
+	.columnForm {
+		display: flex;
+		flex-direction: column;
+		width: 60%;
+		margin: 0 auto;
+
+		input {
+			margin: 5px;
+		}
+
+		Button {
+			margin: 5px 0;
+		}
+	}
+}
