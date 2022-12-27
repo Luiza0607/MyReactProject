@@ -4,6 +4,7 @@ import Button from '../Button/Button';
 import { useDispatch } from 'react-redux';
 import { useState } from 'react';
 import { searchString } from '../../redux/store';
+import { useEffect } from 'react';
 
 const SearchForm = () => {
 	const [searchStringTitle, setSearchStringTitle] = useState('');
@@ -12,6 +13,10 @@ const SearchForm = () => {
 		e.preventDefault();
 		dispatch(searchString(searchStringTitle));
 	};
+
+	useEffect(() => {
+		dispatch(searchString(''));
+	}, [dispatch]);
 
 	return (
 		<form className={styles.searchForm} onSubmit={handleSubmit}>
