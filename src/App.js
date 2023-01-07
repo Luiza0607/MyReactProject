@@ -5,7 +5,7 @@ import { Home } from './components/Home/Home.js';
 import { NavBar } from './components/NavBar/NavBar.js';
 import { Routes, Route } from 'react-router-dom';
 import { NotFound } from './components/NotFound/NotFound.js';
-import { List } from './components/List/List.js';
+import List from './components/List/List.js';
 
 export const App = () => {
 	return (

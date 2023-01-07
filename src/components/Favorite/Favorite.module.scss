@@ -1,6 +1,11 @@
 @use 'sass:math';
 @import '../../styles/settings.scss';
 
+.favorite {
+	width: 50%;
+	margin: 0 auto;
+}
+
 .favoriteSubpage {
 	display: flex;
 	align-items: center;

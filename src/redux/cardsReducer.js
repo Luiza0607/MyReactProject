@@ -13,8 +13,8 @@ export const getFilteredCards = ({ cards, searchStringTitle }, columnId) =>
 			card.columnId === columnId && strContains(card.title, searchStringTitle)
 	);
 
-export const getFavoriteCards = ({ cards }) =>
-	cards.filter((card) => card.isFavorite);
+export const getFavoriteCards = (state) => state.cards.filter(card => card.isFavorite === true);
+
 
 // action creators
 export const addCard = (payload) => ({ type: ADD_CARD, payload });
